@@ -1,0 +1,123 @@
+/* Left Container - Navigation */ 
+#leftcontainer {
+	float: left;
+	width: 15%;
+	height: 100%;
+	background-color: #428294;
+}
+
+ul#navigation {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #428294;
+	font-family: 'Helvetica', Arial, sans-serif; or 'Helvetica Bold', Arial, sans-serif;
+	font-size: 0.875em; 
+}
+
+li a {
+    display: block;
+    color: #e4f2f5;
+    padding: 10px 0 10px 10px;
+    text-decoration: none;
+}
+
+.active {
+    background-color: #2f5c69;
+    color: #white;
+	border-left: 5px solid #fe8640; 
+	padding: 10px 0px 10px 5px;
+}
+
+li. a:hover:not(.active) {
+    background-color: #428294;
+    color: #white;
+}
+
+#rightcontainer {
+    background-color: #e4f2f5;
+    float: left;
+    height: inherit;
+    width: 85%;
+	height: 100%;
+}
+
+/* CONCERTS */
+#concertsbox {
+	width: 100%;
+	height: 100%;
+	background-color: #e4f2f5;
+}
+
+#concertscontainer {
+	width: 100%;
+	height: 100%;
+	margin-top: 10px;
+	margin-bottom: 40px;
+	background-color: #e4f2f5;
+	float: left;
+}
+
+.addnew {
+	float: right;
+	font-family: 'Helvetica', Arial, sans-serif; or 'Helvetica Bold', Arial, sans-serif;
+	font-size: 10px; 
+	font-weight: normal;
+	padding-left: 15px;
+	color: black;
+	padding: 5px;
+	list-style-type: none;
+	
+}
+
+.addNewButton {
+    background-color: #b3cdd4;
+    border: none;
+    color: black;
+    padding: 2px 7px 7px 7px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5em;
+    cursor: pointer;
+	float: right;	
+}
+
+#concerts {
+	width: 95%;
+	background-color: ;
+	margin: 0 auto;
+}
+
+.concerttable {
+	font-family: 'Helvetica', Arial, sans-serif; or 'Helvetica Bold', Arial, sans-serif;
+	font-size: 14px; 
+	font-weight: normal;
+	padding-left: 15px;
+	color: black;
+	width:100%;
+}
+
+table, th, td {
+    border-collapse: collapse;
+}
+
+td {
+    text-align: left;
+	padding-left: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+th {
+	background-color: ;
+	text-align: center;
+	padding-top: 15px;
+	padding-left: 5px;
+	padding-bottom: 3px;
+}
+
+tr:nth-child(even) {
+    background-color: white;
+}

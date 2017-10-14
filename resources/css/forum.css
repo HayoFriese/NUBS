@@ -1,0 +1,2406 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:Arial, sans-serif;
+    -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+}
+body{
+    background-color: #FAFAFA;
+}
+/*footer*/
+    footer {
+        width: 100%;
+        float: left;
+        position: fixed;
+        bottom: 0;
+        background-color: white;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        } 
+        #footerLeft {
+            float: left;
+            position: relative;
+            padding-left: 75px; 
+        }
+        #footerRight {
+            float: right;
+            position: relative;
+            padding-right: 75px;    
+            }
+            p.footerNUBS {
+                text-align: justify;
+                font-family: 'Helvetica', Arial, sans-serif; or 'Helvetica Bold', Arial, sans-serif;
+                font-size: 0.8em; 
+                font-weight: normal;
+                color: black;   
+            }
+            #footerRight ul {
+                list-style-type: none;
+                overflow: hidden;
+                font-family: 'Helvetica', Arial, sans-serif; or 'Helvetica Bold', Arial, sans-serif;
+                font-size: 0.8em; 
+                font-weight: normal;
+                }
+                #footerRight li {
+                    float: right;
+                    }
+                    #footerRight li a {
+                        display: block;
+                        color: #519dbb;
+                        text-align: center;
+                        text-decoration: none;
+                        }
+                        #footerRight li a:hover:not(.active) {
+                            color: #fdcfb2;
+                        }
+
+/*navigation*/    
+    #navigation{
+        float: left;
+        position: relative;
+        height: 91px;
+        width: 100%;
+        background-color: white;
+        }
+        #search {
+            float: right;
+            position: relative;
+            margin-right: 16px;
+            padding-top: 33px;
+            }
+            #search input[type=text] {
+                height: 20px;
+                color: #706f6f;
+                border: 1px solid #e7e7e7;
+            }
+            #search input[type=button] {
+                float: right;
+                position: relative;
+                height: 22px;
+                border: none;
+                margin-left: 5px;
+                padding-left: 3px;
+                padding-right: 3px;
+                padding-top: 1px;
+                font-family: 'Helvetica', Arial, sans-serif; or 'Helvetica Bold', Arial, sans-serif;
+                font-size: 1em; 
+                font-weight: normal;
+                color:  #519dbb;
+                cursor: pointer;
+                background-color: white;
+                transition:color 0.3s ease-in-out;
+                }
+                #search input[type=button]:hover {
+                    color: #fdcfb2;    
+                }
+        #navigationLeft {
+            float: left;
+            position: relative;
+            padding-left: 75px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            }
+            h1.nubs {
+                font-family: 'Helvetica', Arial, sans-serif; or 'Helvetica Bold', Arial, sans-serif;
+                font-size: 2.75em; 
+                font-weight: normal;
+                }
+                h1.nubs a{
+                    color:black;
+                    text-decoration: none;
+                }
+        #navigationRight {
+            float: right;
+            position: relative;
+            padding-right: 59px;
+            padding-bottom: 4px;
+            }
+            #links {
+                float: right;
+                position: relative;
+                padding-top: 36px;
+            }                           
+            #navigation ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: white;
+                height: 51px;
+                font-family: 'Helvetica', Arial, sans-serif; or 'Helvetica Bold', Arial, sans-serif;
+                font-size: 1em; 
+                font-weight: normal;
+                } 
+                #navigation li {
+                    float: right;
+                }
+                #navigation li a {
+                    display: block;
+                    color: #519dbb;
+                    text-align: center;
+                    padding-left:  16px;
+                    padding-right: 16px;
+                    text-decoration: none;
+                    transition:color 0.3s ease-in-out;
+                    } 
+                    #navigation li a:hover:not(.active) {
+                        color: #fdcfb2;
+                    }
+
+/*Errors*/
+    #errorBody{
+        width:76%;
+        margin:0 auto;
+        margin-top: 50px;
+        }
+        #errorBody p{
+            font-size:1.1em;
+            font-style: italic;
+        }
+
+/*Forum*/
+    #loginHead{
+        background-color: #7CBFD4;
+        color:white;
+        padding:10px 75px;
+        display:table;
+        width:100%;
+        }
+        #loginHead p{
+            vertical-align: middle;
+        }
+        #loginHead span{
+            font-style: italic;
+        }
+        #loginHead a{
+            color:white;
+            text-decoration: none;
+            }
+            #loginHead a:hover{
+                border-bottom:1px solid;
+                font-style:italic;
+            }
+   
+    #forumNav{
+        position:relative;
+        width:100%;
+        display:block;
+        padding:60px 0;
+        }
+        #forumNav div{
+            width:100%;
+            padding:0 12%;
+            position:relative;
+            color:white;
+        }
+        #forumNav h1{
+            display:inline-block;
+            color:black;
+            font-weight:400;
+            }
+
+        #forumNav div > ul{
+            list-style: none;
+            color: black;
+            height:100%;
+            padding:0;
+            margin:0;
+            display:inline-block;
+            float:right;
+            }
+            #forumNav > ul > li{
+                float:left;
+            }
+            #forumNav ul li{
+                display:inline-block;
+                }
+                #forumNav ul li a{
+                    padding:10px 0 10px 10px;
+                    border-bottom:2px solid white;
+                    display:block;
+                    font-size: 1rem;
+                    text-align: right;
+                    text-decoration: none;
+                    color:black;
+                    width:90px;
+                    transition:content 0.2s;
+                    transition:border 0.2s;
+                }
+                #forumNav ul li a:hover{
+                    font-size: 0;
+                    border-bottom:2px solid black;
+                }
+                #forumNav ul li a:hover:after{
+                    content: attr(data-alt);
+                    font-size:1rem;
+                }
+
+    #forumTable{
+        width:100%;
+        margin-bottom: 100px;
+        }
+        #forumTable table{
+            border-collapse: collapse;
+            width:76%;
+            margin:0 auto;
+            }
+            #forumTable th{
+                border-top:3px solid rgb(250, 136, 45);
+                height:70px;
+                padding-left: 20px;
+                text-align: left;
+                background-color: #EDEDED;
+                color:black;
+                font-weight:bold;
+            }
+            #forumTable tr{
+                border:1px solid #EDEDED;
+                transition:background-color 0.3s ease-in-out;
+                }
+                #forumTable tbody tr:hover{
+                    background-color: #FAFAFA;
+                }
+            #forumTable td#forumPosts{
+                padding:25px;
+                color:black;
+            }
+            #forumTable td{
+                padding:25px;
+                color:#8C8C8C;
+                }
+                #forumTable td span{
+                    font-size: 1.2em;
+                    font-weight: lighter;
+                }
+                #forumTable td p{
+                    color:#8C8C8C;
+                    font-size: 0.9em;
+                }
+                #forumTable td h3{
+                    margin-bottom: 10px;
+                }
+                #forumTable td h3 a{
+                    color:black;
+                    text-decoration: none;
+                    border-bottom:1px solid white;
+                    font-size: 1.2em;
+                    transition:all 0.3s ease-in-out;
+                    }
+                    #forumTable td h3 a:hover{
+                        border-bottom:1px solid black;
+                        opacity:0.5;
+                    }
+
+    #postTopic{
+        width:76%;
+        margin:0 auto;
+        margin-top:50px;
+        }
+        #postTopic input[type=text]{
+            border-left:1px solid rgba(0,0,0,0.1);
+            border-bottom:1px solid rgba(0,0,0,0.1);
+            border-top: 1px solid white;
+            border-right:1px solid white;
+            width:80%;
+            padding:20px;
+            font-size: 1.1em;
+            font-weight:100;
+            transition:border 0.3s ease-in-out;
+            }
+            #postTopic input[type=text]:hover{
+                border-left: 1px solid rgba(0,0,0,1);
+                border-bottom: 1px solid rgba(0,0,0,1);
+            }
+            #postTopic input[type=text]:focus{
+                outline:none;
+                border-left:1px solid gray;
+                border-bottom:1px solid gray;
+            }
+        #postTopic select{
+            margin-top: 50px;
+            color:rgba(0,0,0,0.4);
+            width:80%;
+            padding:10px 15px;
+            font-size: 1.1em;
+            font-weight:100;
+            border-left:1px solid rgba(0,0,0,0.1);
+            border-bottom:1px solid rgba(0,0,0,0.1);
+            border-top: 1px solid white;
+            border-right:1px solid white;
+            transition:all 0.3s ease-in-out;
+            }
+            #postTopic select:hover{
+                opacity:1;
+                border-left: 1px solid rgba(0,0,0,1);
+                border-bottom: 1px solid rgba(0,0,0,1);
+            }
+            #postTopic select:focus{
+                opacity:1;
+                outline:none;
+                color:rgba(0,0,0,1);
+                border-left: 1px solid rgba(0,0,0,1);
+                border-bottom: 1px solid rgba(0,0,0,1);
+            }
+        #postTopic textarea{
+            margin-top: 50px;
+            width:80%;
+            max-width:80%;
+            height:150px;
+            padding:10px 20px;
+            font-size: 1.1em;
+            font-weight:100;
+            border-left:1px solid rgba(0,0,0,0.1);
+            border-bottom:1px solid rgba(0,0,0,0.1);
+            border-top: 1px solid white;
+            border-right:1px solid white;
+            transition:all 0.3s ease-in-out;
+            }
+            #postTopic textarea:hover{
+                border-left: 1px solid rgba(0,0,0,1);
+                border-bottom: 1px solid rgba(0,0,0,1);
+            }
+            #postTopic textarea:focus{
+                outline:none;
+                border-left: 1px solid rgba(0,0,0,1);
+                border-bottom: 1px solid rgba(0,0,0,1);
+            }
+        #postTopic input[type=submit]{
+            display:block;
+            margin:0 auto;
+            margin-top:50px;
+            opacity:0.5;
+            border:1px solid white;
+            background:white;
+            width:200px;
+            height:60px;
+            font-size:1.1em;
+            transition:all 0.3s ease-in-out;
+            }
+            #postTopic input[type=submit]:hover{
+                border:1px solid #7CBFD4;
+                background:#7CBFD4;
+                color:white;
+                cursor:pointer;
+                opacity:1;
+            }
+            #postTopic input[type=submit]:focus{
+                outline:none;
+                border:1px solid #7CBFD4;
+                background:#7CBFD4;
+                color:white;
+                text-decoration: underline;
+                opacity:1;
+            }
+
+    #forumHome{
+        width:76%;
+        margin:0 auto;
+        }
+        #forumHome p a{
+            text-decoration: none;
+            border-bottom:1px solid white;
+            color:black;
+            opacity:0.5;
+            transition:all 0.3s ease-in-out;
+            }
+            #forumHome p a:hover{
+                opacity:1;
+                border-bottom:1px solid black;
+            }
+
+    #replySec{
+        width:76%;
+        margin:0 auto;
+        margin-top: 30px;
+        }
+        #replySec h2{
+            opacity:0.4;
+            font-weight:lighter;
+        }
+        #replySec textarea{
+            padding:10px 20px;
+            margin-top: 20px;
+            width:100%;
+            max-width: 100%;
+            height:140px;
+            font-size: 1.1em;
+            border:1px solid white;
+            outline:none;
+            transition:all 0.3s ease-in-out;
+            }
+            #replySec textarea:hover{
+                border-left: 1px solid black;
+                border-bottom: 1px solid black; 
+            }
+            #replySec textarea:focus{
+                border-left: 1px solid black;
+                border-bottom: 1px solid black; 
+            }
+        #replySec input[type=submit]{
+            display:block;
+            margin:0 auto;
+            opacity:0.5;
+            border:1px solid white;
+            background:white;
+            width:200px;
+            height:60px;
+            font-size:1.1em;
+            transition:all 0.3s ease-in-out;
+            outline:none;
+            }
+            #replySec input[type=submit]:hover{
+                border:1px solid #7CBFD4;
+                background:#7CBFD4;
+                color:white;
+                cursor:pointer;
+                opacity:1;
+            }
+            #postTopic input[type=submit]:focus{
+                border:1px solid #7CBFD4;
+                background:#7CBFD4;
+                color:white;
+                text-decoration: underline;
+                opacity:1;
+            }
+
+/*Sign In*/  
+        #signCont{
+            background-color: white;
+            left:50%;
+            top:25%;
+            transform: translateY(-50%);
+            transform: translateX(-50%);
+            position: absolute;
+            width: 425px;
+        }
+        #progress{
+            transition:width 0.3s ease-in-out;
+            width:25%;
+            background-color: blue;
+            height:5px;
+        }
+        #signIn {
+            width:100%;
+            padding:15% 10%;
+            }
+            #signIn h1 {
+                font-family: 'Helvetica', Arial, sans-serif; or 'Helvetica Bold', Arial, sans-serif;
+                font-weight: normal;
+                font-size: 2.5em;
+                margin-bottom: 25px;
+                position: relative;
+                text-align: center;
+            }
+            #signIn h2 {
+                font-family: 'Helvetica', Arial, sans-serif; or 'Helvetica Bold', Arial, sans-serif;
+                font-weight: normal;
+                font-size: 2    em;
+                margin-bottom: 25px;
+                position: relative;
+            }
+            #signIn input[type=text], input[type=password], input[type=number], input[type=email]{
+                color:rgba(0,0,0,0.4);
+                transition:color 0.3s ease-in-out;
+                }
+                #signIn input[type=text]:hover, input[type=password]:hover, input[type=number]:hover, input[type=email]:hover{
+                    color:rgba(0,0,0,1);
+                }
+                #signIn input[type=text]:focus, input[type=password]:focus, input[type=number]:focus, input[type=email]:focus{
+                    color:rgba(0,0,0,1);
+                }
+            #signIn input[type=text]{
+                font-family: 'Helvetica', Arial, sans-serif; or 'Helvetica Bold', Arial, sans-serif;
+                outline: none;
+                background: #F2F2F2;
+                width: 100%;
+                border: none;
+                padding: 15px;
+                font-size: 14px;
+                margin-bottom: 15px;
+            }
+            #signIn input[type=password]{
+                font-family: 'Helvetica', Arial, sans-serif; or 'Helvetica Bold', Arial, sans-serif;
+                outline: none;
+                background: #F2F2F2;
+                width: 100%;
+                border: none;
+                padding: 15px;
+                margin-bottom: 15px;
+                font-size: 14px;
+            }
+            #signIn input[type=email]{
+                font-family: 'Helvetica', Arial, sans-serif; or 'Helvetica Bold', Arial, sans-serif;
+                outline: none;
+                background: #F2F2F2;
+                width: 100%;
+                border: none;
+                padding: 15px;
+                margin-bottom: 15px;
+                font-size: 14px;
+            }
+            #signIn input[type=submit] {
+                font-family: 'Helvetica', Arial, sans-serif; or 'Helvetica Bold', Arial, sans-serif;
+                background: #519dbb;
+                width: 100%;
+                border: none;
+                padding: 15px;
+                color: white;
+                font-size: 1em;
+                cursor: pointer;
+                transition:all 0.1s ease-in-out;
+                }
+                #signIn input[type=submit]:hover, #signIn input[type=submit]:focus {
+                    background: #fdcfb2;
+                }
+            #signIn button {
+                font-family: 'Helvetica', Arial, sans-serif; or 'Helvetica Bold', Arial, sans-serif;
+                background: #519dbb;
+                width: 100%;
+                border: 0;
+                margin-top: 10px;
+                padding: 15px;
+                color: white;
+                font-size: 1em;
+                cursor: pointer;
+                transition:all 0.1s ease-in-out;
+                }
+                #signIn button:hover, #signIn button:focus {
+                    background: #fdcfb2;
+                    outline:none;
+                }
+            #signIn #genderSelect{
+                width:50%;
+                margin-bottom: 10px;
+                float:left;
+                text-align: center;
+                }
+                #signIn #genderSelect input[type=radio]{
+                    margin-left: 25px;
+                }
+            #signIn #dob{
+                margin-top: 10px;
+                width:100%;
+                margin-bottom: 10px;
+                }
+                #signIn #dob select{
+                    background: #F2F2F2;
+                    color:rgba(0,0,0,0.4);
+                    outline:none;
+                    border:none;
+                    padding:15px 0;
+                    text-indent: 15px;
+                    width:30%;
+                    margin-right: 13px;
+                    display:inline;
+                    transition:color 0.3s, ease-in-out;
+                    }
+                    #signIn #dob select:hover, select:active{
+                        color:rgba(0,0,0,1);
+                    }
+                #signIn #dob input[type=number]{
+                    background: #F2F2F2;
+                    border:none;
+                    outline:none;
+                    width:29.74%;
+                    margin:0;
+                    padding:15px 0;
+                    text-indent: 15px;
+                    display:inline;
+                }
+            #signIn p{
+                margin-top:5px;
+                margin-left: 15px;
+                font-size: 0.9em;
+            }
+            #signIn h4{
+                margin-top: 10px;
+            }
+            #signIn #signupLink{
+                text-align: center;
+                margin-top:10px;
+                font-size: 0.9em;
+            }
+    
+/*Sign Up*/ 
+    #signupUser #logIn{
+        display:block;
+    }
+    #summary{
+        display:none;
+    } 
+    #address{
+        display:none;
+    }
+    #confirm{
+        display:none;
+    }
+
+/*Home Page*/
+    #container{
+        width:100%;
+        height:100%;
+        min-height: 100vh;
+        float:left;
+    }
+    #content {
+        width: 100%;
+        height:100%;
+        min-height: 100vh;
+        position:relative;
+        float:left;
+        } 
+    /*--top content--*/
+        #topContent {
+            background-color: #222222;
+            width: 100%;
+            height: 75vh;
+            min-height: 250px;
+            float: left;
+            position: relative;
+        }
+        #topContent img{
+            opacity:0.6;
+            width:100%;
+            height:100%;
+        }
+        #imageText {
+            position: absolute;
+            bottom: 30px;
+            left: 75px;
+            }
+            p.gather {
+                font-family: 'Helvetica', Arial, sans-serif; or 'Helvetica Bold', Arial, sans-serif;
+                font-size: 3.5em; 
+                font-weight: normal;
+                color: white;
+            } 
+            p.refugees {
+                font-family: 'Helvetica', Arial, sans-serif; or 'Helvetica Bold', Arial, sans-serif;
+                font-size: 6.5em; 
+                font-weight: normal;
+                color: white;   
+            }
+    
+    /*-- second content --*/
+        #secondContent {
+            float: left;
+            position: relative;
+            width: 100%;
+            background-color: #519dbb;
+            padding:60px 40px;
+        }
+        #causeHeading {
+            width: 100%;
+            float:left;
+            text-align: center;
+            }
+            #causeHeading h2 {
+                font-family: 'Helvetica', Arial, sans-serif; or 'Helvetica Bold', Arial, sans-serif;
+                font-size: 3em; 
+                font-weight: normal;
+                color: white;   
+            }
+            #causeContent {
+                float:left;
+                width: 100%;
+                padding:20px 0;
+                margin:40px 0;
+                }
+                #cause{
+                    width:33%;
+                    display:inline-block;
+                    } 
+                    #cause h3 {
+                        font-family: 'Helvetica', Arial, sans-serif; or 'Helvetica Bold', Arial, sans-serif;
+                        font-size: 2em; 
+                        font-weight: normal;
+                        text-align: center;
+                        color: white;
+                        margin-bottom: 20px;
+                    }
+                    #cause p {
+                        font-family: 'Helvetica', Arial, sans-serif; or 'Helvetica Bold', Arial, sans-serif;
+                        font-size: 1em; 
+                        font-weight: normal;
+                        text-align: center;
+                        padding:10px 75px;
+                        color: white;
+                    }
+        
+        #causeReadMore{
+            width:100%;
+            text-align: center;
+            }
+            #causeReadMore a{
+                color:white;
+                text-decoration: none;
+                font-size: 0.9em;
+                }
+                #causeReadMore a:hover{
+                    color:#fdcfb2;
+                }
+    
+    /*--third content--*/
+        #thirdContent{
+            float: left;
+            position: relative;
+            width: 100%;
+            padding:50px 25% 20px;
+            }
+            #thirdContent a{
+                text-decoration: none;
+            }
+            #thirdContent a > h2{
+                transition:all 0.3s ease-in-out;
+                }
+                #thirdContent a:hover > h2{
+                    color:#fdcfb2;
+
+                }
+            #thirdContent h2 {
+                font-family: 'Helvetica', Arial, sans-serif; or 'Helvetica Bold', Arial, sans-serif;
+                font-size: 2em; 
+                font-weight: normal;
+                color: #519dbb; 
+                text-align: center;
+                margin-bottom: 30px;
+            }
+            .center{
+                width:100%;
+                position:relative;
+                float:left;
+                padding: 30px 10px;
+                border-bottom:1px solid #fdcfb2;
+                }
+                #contentL {
+                    text-align: left;
+                    width: 49%;
+                    margin-right: 0.5%;
+                    position: relative;
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+                #contentR {
+                    text-align: right;
+                    margin-left: 0.5%;
+                    width: 49%;
+                    position: relative;
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+                #contentL img, #contentR img {
+                    width: 100%;
+                    height: 350px;
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+                #contentL a{
+                    float: left;
+                } 
+                #contentR a {
+                    float:right;
+                }
+                .findOutMore {
+                    font-family: 'Helvetica', Arial, sans-serif; or 'Helvetica Bold', Arial, sans-serif;
+                    background: #519dbb;
+                    text-align: center;
+                    text-decoration: none;
+                    padding:15px;
+                    border: none;
+                    margin-top: 20px;
+                    color: white;
+                    font-size: 0.85em;
+                    cursor: pointer;
+                    transition:all 0.1s ease-in-out;
+                    }
+                    .findOutMore:hover, .findOutMore:focus {
+                        background: #fdcfb2;
+                    }
+                .center h3 {
+                    font-family: 'Helvetica', Arial, sans-serif; or 'Helvetica Bold', Arial, sans-serif;
+                    font-size: 1.75em; 
+                    font-weight: normal;
+                    color: #519dbb; 
+                }
+                
+                .center h4 {
+                    font-family: 'Helvetica', Arial, sans-serif; or 'Helvetica Bold', Arial, sans-serif;
+                    font-size: 0.85em; 
+                    font-weight: normal;
+                    color: #222;
+                    padding-top: 15px;
+                }
+                
+                .center h5 {
+                    font-family: 'Helvetica', Arial, sans-serif; or 'Helvetica Bold', Arial, sans-serif;
+                    font-size: 0.85em; 
+                    font-weight: normal;
+                    color: #222;
+                    padding-top: 15px;
+                }
+        
+        #indexSearchAll{
+            width:100%;
+            float:left;
+            padding:20px 0 50px;
+            }
+            #indexSearchAll p{
+                text-align: center;
+                }
+                #indexSearchAll a{
+                    text-align: center;
+                    color:#519dbb;
+                    text-decoration: none;
+                }
+                #indexSearchAll a:hover{
+                    text-decoration: underline;
+                    font-style: italic;
+                    color:#FA882D;
+                }
+
+/*Concert*/
+    #topContentCP {
+        width: 100%;    
+        height: 80vh;
+        min-height: 250px;
+        float: left;
+        position: relative;
+        background-color: #222;
+        }
+        #topContentCP img {
+            width: 100%;
+            height: 80vh;
+            opacity: 0.6;
+        }
+        #imageTextCP {
+            position: absolute;
+            bottom: 30px;
+            left: 75px; 
+            }
+            #imageTextCP p {
+                font-family: 'Helvetica', Arial, sans-serif; or 'Helvetica Bold', Arial, sans-serif;
+                font-size: 6.5em; 
+                font-weight: normal;
+                color: white;   
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+    
+    #secondContentCP {
+        width: 100%;
+        float:left;
+    }
+
+    #registered{
+        width:100%;
+        position:relative;
+        float:left;
+        background-color: #FA882D;
+        padding:10px 0;
+        }
+        #registered p{
+            text-align: center;
+            color:white;
+        }
+        #registered a{
+            text-align: center;
+            color:black;
+            font-style: italic;
+            text-decoration: none;
+            }
+            #registered a:hover{
+                text-decoration: underline;
+                color:white;
+            }
+    
+    #description {
+        float: left;
+        position: relative;
+        width: 100%;
+        background-color: #519dbb;
+        padding:5% 6%;
+        }
+        #description p {
+            font-family: 'Helvetica', Arial, sans-serif; or 'Helvetica Bold', Arial, sans-serif;
+            font-size: 1.5em; 
+            font-weight: normal;
+            color: white;
+            text-align: center;
+        }
+        
+    #information {
+        width: 100%;
+        float: left;
+        position: relative;
+        padding:50px 50px 0 50px;
+        }
+        #location {
+            width: 50%;
+            padding:0 5%;
+            float: left;
+            position: relative;
+            }
+            #location h1 {
+                text-align: right;
+                font-family: 'Helvetica', Arial, sans-serif; or 'Helvetica Bold', Arial, sans-serif;
+                font-size: 2.3em; 
+                font-weight: normal;
+                color: #519dbb;
+                margin-bottom: 25px;
+            }
+            #location h2{
+                text-align: right;
+                font-family: 'Helvetica', Arial, sans-serif; or 'Helvetica Bold', Arial, sans-serif;
+                font-size: 1em; 
+                font-weight: normal;
+                color: #222;
+            }
+        #date {
+            width: 50%;
+            padding:0 5%;
+            float: left;
+            position: relative; 
+            }
+            #date h1 {
+                font-family: 'Helvetica', Arial, sans-serif; or 'Helvetica Bold', Arial, sans-serif;
+                font-size: 2.3em; 
+                font-weight: normal;
+                color: #519dbb;
+                margin-bottom: 25px;
+            }
+            #date h2 {
+                font-family: 'Helvetica', Arial, sans-serif; or 'Helvetica Bold', Arial, sans-serif;
+                font-size: 1em; 
+                font-weight: normal;
+                margin-bottom: 10px;
+            }
+    
+    #otherInfo {
+        width: 100%;
+        float: left;
+        position: relative;
+        padding:50px;
+        }
+        #age {
+            width: 50%;
+            padding:0 5%;
+            float: left;
+            position: relative; 
+            }
+            #age h1 {
+                text-align: right;
+                font-family: 'Helvetica', Arial, sans-serif; or 'Helvetica Bold', Arial, sans-serif;
+                font-size: 2.3em; 
+                font-weight: normal;
+                color: #519dbb;
+                margin-bottom: 25px;
+            }
+            
+            #age p {
+                text-align: right;
+                font-family: 'Helvetica', Arial, sans-serif; or 'Helvetica Bold', Arial, sans-serif;
+                font-size: 1em; 
+                font-weight: normal;
+                color: #222;
+            }
+        #host {
+            width: 50%;
+            padding:0 5%;
+            float: left;
+            position: relative;
+            }
+            #host h1 {
+                font-family: 'Helvetica', Arial, sans-serif; or 'Helvetica Bold', Arial, sans-serif;
+                font-size: 2.3em; 
+                font-weight: normal;
+                color: #519dbb;
+                margin-bottom: 25px;
+            }
+            #host p{
+                font-family: 'Helvetica', Arial, sans-serif; or 'Helvetica Bold', Arial, sans-serif;
+                font-size: 1em; 
+                font-weight: normal;
+                margin-bottom: 10px;
+            }
+    
+    #tickets {
+        width: 100%;
+        float: left;
+        position: relative;
+        padding:0 30%;
+        }
+        #tickets h1{
+            text-align: center;
+            font-family: 'Helvetica', Arial, sans-serif; or 'Helvetica Bold', Arial, sans-serif;
+            font-size: 2.3em; 
+            font-weight: normal;
+            color: #519dbb;
+            margin-bottom: 50px;
+        }
+        #tickets form{
+            width:100%;
+            float:left;
+            margin-bottom: 30px;
+            }
+            #tickets form p{
+                float:left;
+                padding:10px;
+                text-align: center;
+                width:32%;
+                margin-right: 1%;
+            }
+            #tickets form div{
+                float:left;
+                width:33%;
+                text-align: center;
+            }    
+            .buyTicketsButton {
+                background-color: #519dbb;
+                border: none;
+                outline: none;  
+                color: white;
+                display: inline-block;
+                font-size: 0.85em;
+                cursor: pointer;
+                padding: 10px 30px;
+            }
+    
+    #media {
+        width: 100%;
+        float: left;
+        position: relative;
+        }
+        #mediaContent {
+            width: 100%;
+            float: left;
+            position: relative;
+            background-color: #222222;
+            }
+            #mediaContent img{
+                height:250px;
+            }
+    
+    #video{
+        width:100%;
+        float:left;
+        position:relative;
+        padding:25px 30% 0;
+        }
+        #video h1{
+            text-align: center;
+            font-family: 'Helvetica', Arial, sans-serif; or 'Helvetica Bold', Arial, sans-serif;
+            font-size: 2.3em; 
+            font-weight: normal;
+            color: #519dbb;
+            margin-bottom: 50px;
+        }
+        #video div p{
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+    #lineup {
+        width: 100%;
+        float: left;
+        position: relative;
+        padding:50px 0;
+        }
+        #lineup h1{
+            text-align: center;
+            font-family: 'Helvetica', Arial, sans-serif; or 'Helvetica Bold', Arial, sans-serif;
+            font-size: 2.3em; 
+            font-weight: normal;
+            color: #519dbb;
+            margin-bottom: 50px;
+        }
+        #lineup div{
+            width:100%;
+            float:left;
+            padding:0 30%;
+            }
+            #lineup div #linetime{
+                float:left;
+                padding:10px;
+                width:33%;
+                text-align: center;
+            }
+            #lineup div p{
+                float:left;
+                padding:10px;
+                text-align: center;
+                width:32%;
+                margin-right: 1%;
+            }
+
+    #reviews {
+        width: 100%;
+        float: left;
+        position: relative;
+        padding:20px 15%;
+        }
+        #reviews h1{
+            font-family: 'Helvetica', Arial, sans-serif; or 'Helvetica Bold', Arial, sans-serif;
+            font-size: 2.3em; 
+            font-weight: normal;
+            color: #519dbb;
+            margin-bottom: 20px;
+        }
+        #reviews #reviewSignNo{
+            font-weight:normal;
+            font-style: italic;
+            font-size:1.2em;
+            color:black;
+            opacity:0.5;
+            margin-bottom: 50px;
+        }
+        #reviews form{
+            width:100%;
+            float:left;
+            border-bottom: 1px solid #FA882D;
+            margin-bottom: 50px;
+            }
+            #reviews #reviewSub{
+                margin-bottom: 20px;
+                width:100%;
+                float:left;
+            }
+            #reviews #ratingTitle{
+                border-left:1px solid rgba(0,0,0,0.1);
+                border-bottom:1px solid rgba(0,0,0,0.1);
+                border-top: 1px solid white;
+                border-right:1px solid white;
+                width:80%;
+                padding:21px 0;
+                text-indent: 20px;
+                margin-right:2.5%; 
+                font-size: 1.1em;
+                font-weight:100;
+                transition:border 0.3s ease-in-out;
+                }
+                #reviews #ratingTitle:hover{
+                    border-left: 1px solid rgba(0,0,0,1);
+                    border-bottom: 1px solid rgba(0,0,0,1);
+                }
+                #reviews #ratingTitle:focus{
+                    outline:none;
+                    border-left:1px solid gray;
+                    border-bottom:1px solid gray;
+                }
+            #reviews select{
+                border-left:1px solid rgba(0,0,0,0.1);
+                border-bottom:1px solid rgba(0,0,0,0.1);
+                border-top: 1px solid white;
+                border-right:1px solid white;
+                width:17.5%;
+                padding:18px 0;
+                text-indent: 20px; 
+                font-size: 1.1em;
+                font-weight:100;
+                transition:border 0.3s ease-in-out;
+                }
+                #reviews select:hover{
+                    border-left: 1px solid rgba(0,0,0,1);
+                    border-bottom: 1px solid rgba(0,0,0,1);
+                }
+                #reviews select:focus{
+                    outline:none;
+                    border-left:1px solid gray;
+                    border-bottom:1px solid gray;
+                }
+            #reviews textarea{
+                width:100%;
+                max-width:100%;
+                height:170px;
+                padding:10px 20px;
+                margin-bottom: 20px;
+                font-size: 1.1em;
+                font-weight:100;
+                border-left:1px solid rgba(0,0,0,0.1);
+                border-bottom:1px solid rgba(0,0,0,0.1);
+                border-top: 1px solid white;
+                border-right:1px solid white;
+                transition:all 0.3s ease-in-out;
+                }
+                #reviews textarea:hover{
+                    border-left: 1px solid rgba(0,0,0,1);
+                    border-bottom: 1px solid rgba(0,0,0,1);
+                }
+                #reviews textarea:focus{
+                    outline:none;
+                    border-left: 1px solid rgba(0,0,0,1);
+                    border-bottom: 1px solid rgba(0,0,0,1);
+                }
+            #reviews #reviewVid{
+                vertical-align: middle;
+                border-left:1px solid rgba(0,0,0,0.1);
+                border-bottom:1px solid rgba(0,0,0,0.1);
+                border-top: 1px solid white;
+                border-right:1px solid white;
+                padding:21px 0;
+                width:50%;
+                text-indent: 20px;
+                margin-right:10%; 
+                font-size: 1.1em;
+                font-weight:100;
+                transition:border 0.3s ease-in-out;
+                }
+                #reviews #reviewVid:hover{
+                    border-left: 1px solid rgba(0,0,0,1);
+                    border-bottom: 1px solid rgba(0,0,0,1);
+                }
+                #reviews #reviewVid:focus{
+                    outline:none;
+                    border-left:1px solid gray;
+                    border-bottom:1px solid gray;
+                }
+            #reviews #reviewFile{
+                margin-bottom: 20px;
+                width:100%;
+            }
+            #reviewFile span{
+                width:20%;
+                vertical-align: middle;
+            }
+            #reviews #file{
+                margin-left: 10%;
+            }
+            #reviews input[type=submit]{
+                display:block;
+                margin-top:20px;
+                margin-bottom: 50px;
+                opacity:0.5;
+                border:1px solid white;
+                background:white;
+                width:200px;
+                height:60px;
+                font-size:1.1em;
+                transition:all 0.3s ease-in-out;
+                }
+                #reviews input[type=submit]:hover{
+                    border:1px solid #7CBFD4;
+                    background:#7CBFD4;
+                    color:white;
+                    cursor:pointer;
+                    opacity:1;
+                }
+                #reviews input[type=submit]:focus{
+                    outline:none;
+                    border:1px solid #7CBFD4;
+                    background:#7CBFD4;
+                    color:white;
+                    text-decoration: underline;
+                    opacity:1;
+                }
+
+        #reviews #reviewPosts{
+            padding: 0 10% 50px;
+            margin-bottom: 50px;
+            float:left;
+            width:100%;
+            border-bottom: 1px solid #FA882D;
+            }
+            #reviews #reviewPosts h4{
+                font-style: italic;
+                font-weight:normal;
+                font-size: 1.4em;
+                color: #519dbb;
+                margin-bottom: 5px;
+            }
+            #reviews #reviewPosts #rateStat{
+                float:left;
+                width:100%;
+                margin-bottom: 10px;
+                }
+                #reviews #reviewPosts #rateNum{
+                    text-align: left;
+                    color: #519DBB;
+                    opacity:0.8;
+                    display:inline;
+                }
+                #reviews #reviewPosts #rateDate{
+                    text-align:right;
+                    display:inline;
+                    margin-left: 30px;
+                    font-size: 0.8em;
+                    font-style: italic;
+                }
+            #reviews #reviewPosts #rateMain{
+                float:left;
+                width:100%;
+                padding:20px 0;
+                }
+                #rateMain #rateDesc{
+                    margin-bottom: 50px;
+                    font-size: 1em;
+                }
+                #rateMain #rateBy{
+                    font-size: 0.8em;
+                }
+            #reviews #reviewPosts #rateVid{
+                float:left;
+                font-size: 0.9em;
+                font-style: italic;
+            }
+            #reviews #reviewPosts #rateImg{
+                height:100px;
+                float:left;
+                }
+                #rateImg img{
+                    height:100%;
+                }
+
+/*New Concert*/
+    #progressCon{
+        transition:width 0.3s ease-in-out;
+        width:20%;
+        background-color: blue;
+        height:5px;
+    }
+    #newConCont{
+        background-color: white;
+        left:50%;
+        top:91px;
+        transform: translateX(-50%);
+        position: absolute;
+        width: 55%;
+        }
+        #signIn {
+            float:left;
+            width:100%;
+            padding:5% 7.5%;
+            }
+            #addForm{
+                    width:80%;
+                    margin-bottom: 20px;
+                    height:30px;
+                    }
+                    #addForm input[type=button]{
+                        display:inline;
+                        float: right;
+                        border:1px solid #519DBB;
+                        background-color: #519DBB;
+                        color:white;
+                        outline:none;
+                        border-radius:50%;
+                        width:30px;
+                        height:100%;
+                        font-size: 1em;
+                        text-align: center;
+                        transition:all 0.3s ease-in-out;
+                        }
+                        #addForm input[type=button]:hover{
+                            color:black;
+                            transform:rotate(360deg);
+                            background-color: #fdcfb2;
+                            border:1px solid #fdcfb2;
+                            cursor:pointer;
+                        }
+            .conNextButton{
+                float:left;
+                width:100%;
+                padding:0 35%;
+            }
+            #signIn h3{
+                margin: 10px 0;
+            }
+            #conSum{
+                width:100%;
+                float:left;
+                }
+                #conRight{
+                    width:40%;
+                    float:right;
+                    margin-bottom: 20px;
+                    }
+                    #conDateTime{
+                        width:100%;
+                        }
+                        #signIn input[type=date]{
+                            float:left;
+                            background: #F2F2F2;
+                            color:rgba(0,0,0,0.4);
+                            outline:none;
+                            border:none;
+                            padding:10px 0;
+                            width:49%;
+                            text-indent: 10px;
+                            display:inline;
+                            transition:color 0.3s, ease-in-out;
+                        }
+                        #signIn input[type=time]{
+                            float:right;
+                            background: #F2F2F2;
+                            color:rgba(0,0,0,0.4);
+                            outline:none;
+                            border:none;
+                            padding:10px 0;
+                            width:49%;
+                            text-align:center;
+                            display:inline;
+                            transition:color 0.3s, ease-in-out;
+                        }
+                    #conAddress{
+                        width:100%;
+                        }
+                        #conAddress #state{
+                            width:49%;
+                            float:left;
+                        }
+                        #conAddress #country{
+                            float:right;
+                            width:49%;
+                    }
+                #conLeft{
+                    width:55%;
+                    float:left;
+                    margin-bottom: 20px;
+                    }
+                    #conLeft textarea{
+                        width:100%;
+                        max-width: 100%;
+                        padding:15px;
+                        border:none;
+                        outline:none;
+                        background: #F2F2F2;
+                        height:260px;
+                        margin-bottom:10px;
+                    }
+                    #conLeft #ageRestrict{
+                        width:25%;
+                        float:left;
+                        background: #F2F2F2;
+                        color:rgba(0,0,0,0.4);
+                        outline:none;
+                        border:none;
+                        padding:10px 0;
+                        text-indent: 10px;
+                        display:inline;
+                        transition:color 0.3s, ease-in-out;
+                    }
+                    #conLeft #lineupBoolean{
+                        width:50%;
+                        margin-left: 20px;
+                        float:left;
+                        padding:10px 0;
+                        }
+                        #lineupBoolean #lineupBool{
+                            margin-left: 20px;  
+                        }
+
+            #conTicket{
+                display:none;
+                float:left;
+                width:100%;
+                }
+                #ticketCont{
+                    width:100%;
+                    padding:0 25%;
+                    float:left;
+                }
+                #ticketList{
+                    width:100%;
+                    margin:20px auto;
+                    }
+                    #ticketList div{
+                        width:100%;
+                        float:left;
+                        margin-bottom: 30px;
+                    }
+                    #ticketList input[type=button]{
+                        display:inline;
+                        border:1px solid #519DBB;
+                        background-color: #519DBB;
+                        color:white;
+                        outline:none;
+                        border-radius:50%;
+                        width:30px;
+                        height:30px;
+                        margin-bottom: 20px;
+                        font-size: 1em;
+                        text-align: center;
+                        transition:all 0.3s ease-in-out;
+                        }
+                        #ticketList input[type=button]:hover{
+                            color:black;
+                            background-color: #fdcfb2;
+                            border:1px solid #fdcfb2;
+                            cursor:pointer;
+                        }
+                    #ticketList #ticketFlat{
+                        float:left;
+                        background: #F2F2F2;
+                        color:rgba(0,0,0,0.4);
+                        outline:none;
+                        border:none;
+                        padding:10px 0;
+                        width:49%;
+                        text-indent: 10px;
+                        display:inline;
+                        transition:color 0.3s, ease-in-out;
+                    }
+                    #ticketList #ticketDonate{
+                        float:right;
+                        background: #F2F2F2;
+                        color:rgba(0,0,0,0.4);
+                        outline:none;
+                        border:none;
+                        padding:10px 0;
+                        width:49%;
+                        text-indent: 10px;
+                        display:inline;
+                        transition:color 0.3s, ease-in-out;
+                    }
+
+            #conMedia{
+                display:none;
+                float:left;
+                width:100%;
+                }
+                #mediaCont{
+                    width:80%;
+                    margin:0 auto;
+                } 
+                #conMedia #confiles{
+                    margin-top:20px;
+                    width:80%;
+                    float:left;
+                    }
+                    #conMedia #confiles p{
+                        padding:0;
+                        float:left;
+                        display:inline;
+                    }
+                    #conMedia #confiles input[type=file]{
+                        float:right;
+                        display:inline;
+                    }
+                    #conMedia input[type=text]{
+                        margin-top: 20px;
+                    }
+
+            #conLineup{
+                display:none;
+                width:100%;
+                float:left;   
+                }
+                #lineupCont{
+                    width:100%;
+                    padding:0 25%;
+                    float:left;
+                }
+                #lineupList{
+                    float:left;
+                    width:100%;
+                    margin:20px auto;
+                    }
+                    #lineupList div{
+                        width:100%;
+                        float:left;
+                        margin-bottom: 30px;
+                    }
+                    #lineupList input[type=button]{
+                        display:inline;
+                        border:1px solid #519DBB;
+                        background-color: #519DBB;
+                        color:white;
+                        outline:none;
+                        border-radius:50%;
+                        width:30px;
+                        height:30px;
+                        margin-bottom: 20px;
+                        font-size: 1em;
+                        text-align: center;
+                        transition:all 0.3s ease-in-out;
+                        }
+                        #lineupList input[type=button]:hover{
+                            color:black;
+                            background-color: #fdcfb2;
+                            border:1px solid #fdcfb2;
+                            cursor:pointer;
+                        }
+                    #lineupList #venue{
+                        float:left;
+                        background: #F2F2F2;
+                        color:rgba(0,0,0,0.4);
+                        outline:none;
+                        border:none;
+                        padding:10px 0;
+                        width:49%;
+                        text-indent: 10px;
+                        display:inline;
+                        transition:color 0.3s, ease-in-out;
+                    }
+                    #lineupList #lineupTime{
+                        float:right;
+                        background: #F2F2F2;
+                        color:rgba(0,0,0,0.4);
+                        outline:none;
+                        border:none;
+                        padding:8px 0;
+                        width:49%;
+                        text-indent: 10px;
+                        display:inline;
+                        transition:color 0.3s, ease-in-out;
+                    }
+
+            #conConfirm{
+                display:none;
+                width:100%;
+                padding:0 25%;
+                margin-bottom: 20px;
+                float:left;
+                }
+                #confirmCont{
+                    float:left;
+                    width:100%;
+                }
+                #confirmParts{
+                    width:100%;
+                    float:left;
+                    margin-bottom: 10px;
+                }
+                #display_tickets{
+                    width:100%;
+                    float:left;
+                }
+                #display_tickets div{
+                    width:100%;
+                    float:left;
+                }
+                #display_tickets p{
+                    float:left;
+                }
+                #display_lineup{
+                    width:100%;
+                    float:left;
+                }
+                #display_lineup div{
+                    width:100%;
+                    float:left;
+                }
+                #display_lineup p{
+                    float:left;
+                }
+                #sumAct{
+                    font-weight: bold;
+                }
+                #sumTickName{
+                    font-weight: bold;
+                }
+                #sumTickFlat{
+
+                }
+
+/*Search Concerts*/
+    #searchHead{
+        width:100%;
+        margin:30px 0;
+        float:left;
+        }
+        #searchHead h1{
+            text-align: center;
+            font-family: 'Helvetica', Arial, sans-serif; or 'Helvetica Bold', Arial, sans-serif;
+            font-size: 2em; 
+            font-weight: normal;
+            color: #519dbb; 
+            text-align: center;
+            margin-bottom: 30px;
+        }
+    #searchContainer{
+        width:100%;
+        padding:0 23% 30px;
+        float:left;
+        }
+        #searchElem{
+            padding:20px 10%;
+            width:100%;
+            border-bottom: 1px solid #fdcfb2;
+            }
+            #searchElem #cover{
+                text-align: left;
+                margin-right: 0.5%;
+                position: relative;
+                display: inline-block;
+                vertical-align: middle;
+                height:250px;
+                width:49%;
+                }
+                #cover img{
+                    width: 100%;
+                    height: 100%;
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+            #searchElem #searchContent{
+                padding-right: 10px;
+                text-align: right;
+                margin-left: 0.5%;
+                width: 49%;
+                position: relative;
+                display: inline-block;
+                vertical-align: middle;
+                
+                }
+                #searchContent a{
+                    text-decoration: none;
+                }
+                #searchContent h2{
+                    margin-bottom: 20px;
+                    font-family: 'Helvetica', Arial, sans-serif; or 'Helvetica Bold', Arial, sans-serif;
+                    font-size: 1.75em; 
+                    font-weight: normal;
+                    color: #519dbb;
+                    }
+                    #searchContent a:hover > h2{
+                        color:#fdcfb2;
+                    }
+                #searchContent p{
+                    margin-bottom: 10px;
+                }
+
+/*Admin*/
+    /* Left Container - Navigation */ 
+        #leftNav {
+            float: left;
+            width: 15%;
+            height: 100%;
+            background-color: #428294;
+            } 
+            #leftNavCont {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                background-color: #428294;
+                font-family: 'Helvetica', Arial, sans-serif; or 'Helvetica Bold', Arial, sans-serif;
+                font-size: 0.875em; 
+            }
+            #leftNavCont li a {
+                display: block;
+                color: #e4f2f5;
+                padding: 10px 0 10px 10px;
+                text-decoration: none;
+            }
+            .active {
+                background-color: #2f5c69;
+                color: white;
+                border-left: 5px solid #fe8640; 
+                padding: 10px 0px 10px 5px;
+            }
+            #leftNavCont li a:hover:not(.active) {
+                background-color: #428294;
+                color: white;
+            }
+            
+            #adminCont {
+                background-color: #e4f2f5;
+                float: left;
+                width: 85%;
+                height: 100%;
+                min-height: 964px;
+            }
+    /* CONCERTS */
+        #concertsbox {
+            width: 100%;
+            height: 100%;
+            background-color: #e4f2f5;
+        }
+        
+        #concertscontainer {
+            width: 100%;
+            background-color: #e4f2f5;
+            float: left;
+        }
+        
+        .addnew {
+            float: right;
+            font-family: 'Helvetica', Arial, sans-serif; or 'Helvetica Bold', Arial, sans-serif;
+            font-size: 10px; 
+            font-weight: normal;
+            padding-left: 15px;
+            color: black;
+            padding: 5px;
+            list-style-type: none; 
+        }
+        
+        .addNewButton {
+            background-color: #b3cdd4;
+            border: none;
+            color: black;
+            padding: 2px 7px 7px 7px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1.5em;
+            cursor: pointer;
+            float: right;   
+        }
+        
+        #concerts {
+            width: 95%;
+            background-color: ;
+            margin: 0 auto;
+        }
+        
+        .concerttable {
+            font-family: 'Helvetica', Arial, sans-serif; or 'Helvetica Bold', Arial, sans-serif;
+            font-size: 14px; 
+            font-weight: normal;
+            padding-left: 15px;
+            color: black;
+            width:100%;
+        }
+        
+        .concerttable, .concerttable th, .concerttable td {
+            border-collapse: collapse;
+        }
+        
+        .concerttable td {
+            text-align: left;
+            padding-left: 5px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        
+        .concerttable th {
+            text-align: left;
+            padding-top: 15px;
+            padding-left: 5px;
+            padding-bottom: 3px;
+        }
+        
+        .concerttable tr:nth-child(even) {
+            background-color: white;
+        }
+    /* DASHBOARD */
+        /* Box 1, revenue, tickets, rating etc */
+            #box1 {
+                width: 100%;
+                height: 250px;
+                background-color: #e4f2f5;
+                float: left;
+                margin-top: 20px;
+            }
+            
+            #elements1 { 
+                padding-left: 35px;
+                padding-right: 35px;
+            }
+            
+            #revenue {
+                width: 19%;
+                height: 220px;
+                background-color: #b3cdd4;
+                float: left; 
+                margin-left: 1%;
+            
+            }
+            
+            #pageviews {
+                width: 19%;
+                height: 220px;
+                background-color: #b3cdd4;
+                float: left;
+                margin-left: 1%;
+            }
+            
+            #ticketssold {
+                width: 19%;
+                height: 220px;
+                background-color: #b3cdd4;
+                float: left;
+                margin-left: 1%;
+            }
+            
+            #starrating {
+                width: 19%;
+                height: 220px;
+                background-color: #b3cdd4;
+                float: left;
+                margin-left: 1%;
+            }
+            
+            #colorrating {
+                width: 19%;
+                height: 220px;
+                background-color: #b3cdd4;
+                float: left;
+                margin-left: 1%;
+            }
+            
+            #adminCont h2 {
+                font-family: 'Helvetica', Arial, sans-serif; or 'Helvetica Bold', Arial, sans-serif;
+                font-size: 10px; 
+                height: 180px;
+                margin-top: 5px;
+                text-align: center;
+                font-weight: normal;
+            }
+
+        /* Box 2,  Expenditures & To-do List*/
+            #box2 {
+                width: 100%;
+                height: 350px;
+                background-color: #e4f2f5;
+                float: left;    
+                margin-top: 20px;
+            }
+            
+            #elements2  { 
+                padding-left: 35px;
+                padding-right: 35px;
+            }
+            
+            #adminCont h3 {
+                font-family: 'Helvetica', Arial, sans-serif; or 'Helvetica Bold', Arial, sans-serif;
+                font-size: 12px;
+                text-align: center;
+                padding-top: 5px;
+                margin-top: 0px;
+                margin-bottom: 5px;
+                font-weight: normal;
+            }
+            
+            #expenditures {
+                width: 49%;
+                height: 300px;
+                margin-left: 1%;
+                background-color: #b3cdd4;
+                float: left;
+            }
+            
+            #todo { 
+                width: 49%;
+                height: 300px;
+                margin-left: 1%;
+                background-color: #b3cdd4;
+                float: left;    
+            }
+        
+        /* Box 3, Statistics */
+            #box3 {
+                width: 100%;
+                height: 400px;
+                background-color: #e4f2f5;
+                float: left;
+                margin-top: 20px;
+            }
+            
+            #elements3  { 
+                height: 100%;
+                padding-left: 35px;
+                padding-right: 35px;
+                margin-bottom: 35px;
+            }
+            
+            #statistics {
+                width: 99%;
+                height: 350px;
+                background-color: #b3cdd4;
+                margin-left: 1%;
+            }
+            
+            #adminCont h4 {
+                font-family: 'Helvetica', Arial, sans-serif; or 'Helvetica Bold', Arial, sans-serif;
+                font-size: 12px;
+                text-align: center;
+                padding-top: 5px;
+                margin-top: 0px;
+                margin-bottom: 5px;
+                font-weight: normal;
+            }
+    /*Update Concert*/
+        .updateNavBack{
+            background-color: #428294;
+        }
+        #updateBack{
+            margin-bottom: 10px;
+        }
+        #concertContainer {
+            float: left;
+            position: relative;
+            width: 85%;
+            height: 100%;
+            background-color: #e4f2f5;
+        }
+        #updateConcert {
+            background-color: #e4f2f5;
+            float: left;
+            width: 100%;
+            padding-left: 2%;
+            padding-right: 2%;
+            padding-top: 20px;
+            } 
+            #updateConcert h2 {
+                width: 100%;
+                font-family: 'Helvetica', Arial, sans-serif; or 'Helvetica Bold', Arial, sans-serif;
+                font-size: 1.2em; 
+                font-weight: normal;
+                text-align: center;
+                float: left;
+                position: relative;
+                color: #519dbb;
+            }
+            #updateConcert h3 {
+                font-family: 'Helvetica', Arial, sans-serif; or 'Helvetica Bold', Arial, sans-serif;
+                font-size: 1em; 
+                font-weight: normal;
+                text-align: left;
+                float: left;
+                position: relative;
+                color: #222;
+            }
+        #info1 {
+            width: 100%;
+            float: left;
+            position: relative;
+            background-color: white;
+            padding-left: 2%;
+            padding-right: 2%;
+            padding-top: 10px;
+            }
+            #info1 div {
+                width: 100%;
+                float: left;
+                position: relative;
+                margin-bottom: 10px;
+            }
+            #info1 #updateconcertTitle {
+                height: 18px;
+                width: 80%;
+                float: right;
+                position: relative;
+                border: 1px thin #222;
+                margin-left: 3%;
+            }
+            #info1 #updatedate {
+                height: 18px;
+                width: 70px;
+                float: left;
+                position: relative;
+                padding-left: 5px;
+                margin-left: 3%;
+                margin-right: 50px;
+                border: 1px thin #222;
+            }
+            #info1 #updatetime {
+                height: 18px;
+                width: 70px;
+                float: left;
+                position: relative;
+                padding-left: 5px;
+                margin-left: 17px;
+                margin-right: 50px;
+                border: 1px thin #222;  
+            }
+            #info1 #updateageRestriction {
+                height: 18px;
+                width: 35px;
+                float: left;
+                position: relative;
+                padding-left: 5px;
+                margin-left: 17px;
+                margin-right: 50px;
+                border: 1px thin #222;  
+            }
+            #info1 #updatedescription {
+                width: 100%;
+                height: 200px;
+                border: 1px thin #222;  
+            }
+        #info2 {
+            width: 100%;
+            float: left;
+            position: relative;
+            background-color: white;
+            padding-left: 2%;
+            padding-right: 2%;
+            padding-top: 10px;
+            margin-top: 20px;
+            }
+            #info2 div {
+                width: 100%;
+                float: left;
+                position: relative;
+                margin-bottom: 15px;
+            }
+            #info2 #line1 {
+                height: 18px;
+                width: 89%;
+                float: right;
+                position: relative;
+                border: 1px thin #222;
+                margin-left: 3%;
+            }
+            #info2 #line2 {
+                height: 18px;
+                width: 89%;
+                float: right;
+                position: relative;
+                border: 1px thin #222;
+                margin-left: 3%;
+            }
+            #info2 #postcode {
+                height: 18px;
+                width: 70px;
+                float: left;
+                position: relative;
+                padding-left: 5px;
+                margin-left: 3%;
+                margin-right: 50px;
+                border: 1px thin #222;
+            }
+            #info2 #state {
+                height: 18px;
+                width: 140px;
+                float: left;
+                position: relative;
+                padding-left: 5px;
+                margin-left: 17px;
+                margin-right: 50px;
+                border: 1px thin #222;  
+            }
+            #info2 #country {
+                height: 18px;
+                width: 150px;
+                float: left;
+                position: relative;
+                padding-left: 5px;
+                margin-left: 17px;
+                margin-right: 50px;
+                border: 1px thin #222;  
+            }
+        #info3 {
+            width: 100%;
+            float: left;
+            position: relative;
+            background-color: white;
+            padding-left: 2%;
+            padding-right: 2%;
+            padding-top: 10px;
+            margin-top: 20px;
+            padding-bottom: 20px;
+            }
+            #info3 > div {
+                width: 100%;
+                float: left;
+                position: relative;
+            }
+            #info3 #media1{
+                margin-left: 13px;
+                }
+                 #deleteImage{
+                    font-family: 'Helvetica', Arial, sans-serif; or 'Helvetica Bold', Arial, sans-serif;
+                    font-size: 0.8em; 
+                    text-align: center;
+                    color: black;
+                    text-decoration: none;
+                    position:relative;
+                }
+                #radio {
+                    position: relative;
+                    margin-top: 5px;
+                }
+                #info3 img {
+                    width:400px;
+                    vertical-align: middle;
+                    display:inline;   
+                }
+                #info3 div p{
+                    margin-top: 50px;
+                }
+                #file {
+                    margin-left: 10px;
+                }
+                
+        #info4 {
+            width: 100%;
+            float: left;
+            position: relative;
+            background-color: white;
+            padding-left: 2%;
+            padding-right: 2%;
+            padding-top: 10px;
+            padding-bottom: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            }
+            #videoLink {
+                width: 100%;
+                float: left;
+                margin-top: 15px;
+            }
+            #videoLink a{
+                display:inline;
+            }
+            #videoLink input[type=text] {
+                width: 400px;
+                display:inline;
+                padding:5px;
+                margin-bottom: 15px;
+            }
+            #mediaVideo{
+                width:332px;
+                padding:5px;
+            }
+        #info5 {
+            width: 100%;
+            float: left;
+            position: relative;
+            background-color: white;
+            padding-left: 2%;
+            padding-right: 2%;
+            padding-top: 10px;
+            }
+            #info5 div {
+                width: 100%;
+                float: left;
+                position: relative;
+                margin-bottom: 20px;
+                margin-top: 10px;
+            }
+            #ticketType {
+                height: 18px;
+                width: 140px;
+                float: left;
+                position: relative;
+                padding-left: 5px;
+                margin-left: 3%;
+                margin-right: 50px;
+                border: 1px thin #222;
+            }
+            #flatPrice {
+                height: 18px;
+                width: 75px;
+                float: left;
+                position: relative;
+                padding-left: 5px;
+                margin-left: 17px;
+                margin-right: 50px;
+                border: 1px thin #222;  
+            }
+            #donationTax {
+                height: 18px;
+                width: 75px;
+                float: left;
+                position: relative;
+                padding-left: 5px;
+                margin-left: 17px;
+                margin-right: 50px;
+                border: 1px thin #222;  
+            }
+        #info6 {
+            width: 100%;
+            float: left;
+            position: relative;
+            background-color: white;
+            padding-left: 2%;
+            padding-right: 2%;
+            padding-top: 10px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            }
+            #info6 div {
+                width: 100%;
+                float: left;
+                position: relative;
+                margin-bottom: 20px;
+                margin-top: 10px;
+            }
+            #info6 #act {
+                height: 18px;
+                width: 140px;
+                float: left;
+                position: relative;
+                padding-left: 5px;
+                margin-left: 3%;
+                margin-right: 50px;
+                border: 1px thin #222;
+            }
+            #info6 #venue {
+                height: 18px;
+                width: 75px;
+                float: left;
+                position: relative;
+                padding-left: 5px;
+                margin-left: 17px;
+                margin-right: 50px;
+                border: 1px thin #222;  
+            }
+            #info6 #actTime {
+                height: 18px;
+                width: 75px;
+                float: left;
+                position: relative;
+                padding-left: 5px;
+                margin-left: 17px;
+                margin-right: 50px;
+                border: 1px thin #222;  
+            }
+        #info7 {
+            width: 100%;
+            float: left;
+            position: relative;
+            background-color: white;
+            padding-left: 2%;
+            padding-right: 2%;
+            padding-top: 10px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            }
+            #info7 div {
+                width: 100%;
+                float: left;
+                position: relative;
+                margin-bottom: 20px;
+                margin-top: 10px;
+            }
+            #info7 table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+            #info7 th {
+                width: 150px;
+                font-family: 'Helvetica', Arial, sans-serif; or 'Helvetica Bold', Arial, sans-serif;
+                font-size: 1.2em; 
+                font-weight: normal;
+                color: #222;
+                text-align: left;
+                padding: 20px 0;
+            }
+            #info7 td {
+                width: 150px;
+                font-family: 'Helvetica', Arial, sans-serif; or 'Helvetica Bold', Arial, sans-serif;
+                font-size: 1em; 
+                font-weight: normal;
+                color: #222;
+                text-align: left;
+                padding:10px 0;
+                margin-top: 10px;
+            }
+        #updateButton{
+            width:100%;
+            float:left;
+            }
+            #update {
+                display:block;
+                margin-top:20px;
+                margin-bottom: 50px;
+                text-align: center;
+                opacity:0.5;
+                border:1px solid white;
+                background:white;
+                width:200px;
+                height:60px;
+                font-size:1.1em;
+                transition:all 0.3s ease-in-out;
+                }
+                #update:hover{
+                    border:1px solid #7CBFD4;
+                    background:#7CBFD4;
+                    color:white;
+                    cursor:pointer;
+                    opacity:1;
+                }

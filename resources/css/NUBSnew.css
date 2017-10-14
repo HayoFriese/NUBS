@@ -1,0 +1,155 @@
+@charset "UTF-8";
+/* CSS Document */
+* { 
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+    height: 100%;
+	width: 100%;
+	min-width: 1000px;
+}
+
+#container {
+	
+}
+
+
+
+/*footer*/
+
+#footer {
+	width: 100%;
+	float: left;
+	position: fixed;
+    bottom: 0;
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#footerLeft {
+	float: left;
+	position: relative;
+	padding-left: 75px;	
+
+}
+
+#footerRight {
+	float: right;
+	position: relative;
+	padding-right: 75px;	
+
+}
+
+p.footerNUBS {
+	text-align: justify;
+	font-family: 'Helvetica', Arial, sans-serif; or 'Helvetica Bold', Arial, sans-serif;
+	font-size: 0.8em; 
+	font-weight: normal;
+	color: black;	
+}
+
+#footerRight ul {
+    list-style-type: none;
+    overflow: hidden;
+	font-family: 'Helvetica', Arial, sans-serif; or 'Helvetica Bold', Arial, sans-serif;
+	font-size: 0.8em; 
+	font-weight: normal;
+}
+
+#footerRight li {
+    float: right;
+}
+
+#footerRight li a {
+    display: block;
+    color: #519dbb;
+    text-align: center;
+    text-decoration: none;
+}
+
+#footerRight li a:hover:not(.active) {
+	color: #fdcfb2;
+}
+
+
+/*--content--*/
+
+#content {
+	width: 100%;
+}
+
+/*--sign in--*/
+
+#signIn {
+	float: left;
+	position: relative;
+	width: 100%;
+}
+
+.signInPage {
+  	width: 335px;
+  	margin-left: auto;
+  	margin-right: auto;
+  	margin-top: 75px;
+  	margin-bottom: auto;
+}
+
+.form {
+  	position: relative;
+  	width: 245px;
+  	padding-top: 45px;
+  	padding-bottom: 45px;
+  	padding-left: 45px;
+  	padding-right: 45px;
+  	text-align: center;
+  	background: white;
+}
+
+.form input {
+	font-family: 'Helvetica', Arial, sans-serif; or 'Helvetica Bold', Arial, sans-serif;
+  	outline: 0;
+  	background: #f2f2f2;
+  	width: 100%;
+  	border: 0;
+  	margin: 0 0 15px;
+  	padding: 15px;
+  	box-sizing: border-box;
+  	font-size: 14px;
+}
+.form button {
+	font-family: 'Helvetica', Arial, sans-serif; or 'Helvetica Bold', Arial, sans-serif;
+  	background: #519dbb;
+  	width: 100%;
+  	border: 0;
+  	padding: 15px;
+  	color: white;
+  	font-size: 1em;
+  	cursor: pointer;
+}
+
+.form button:hover,.form button:focus {
+  	background: #fdcfb2;
+}
+
+h2.signIn {
+	font-family: 'Helvetica', Arial, sans-serif; or 'Helvetica Bold', Arial, sans-serif;
+	font-size: 1.75em; 
+	font-weight: normal;
+	padding-bottom: 25px;
+}
+
+
+
+
+
+
+
+
+
